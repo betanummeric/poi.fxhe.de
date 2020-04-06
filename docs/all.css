@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'glitch'; src: url('fonts/CFGlitchCity-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'typewriter'; src: url('fonts/atwriter.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'machine'; src: url('fonts/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+.display-1 {
+  font-family: glitch;
+}
+
+.neon {
+  animation-name: digital-bang;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0 .05em white;
+}
+::selection {
+  /*background-color: #ffd862;*/
+  background: white;
+}
+.tw {
+  font-family: typewriter;
+  padding-left: .5em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.cols {
+  column-width: 30em;
+  column-rule: 1px solid #222;
+  column-gap: 3em;
+  text-align: justify;
+  font-family: serif;
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+
+.cols b {
+  background-color: #ddd;
+  color: black;
+  padding: 0 0.2em;
+  font-weight: normal;
+}
+
+.highlight {
+  background-image: url("Machine_graphics.png");
+  box-shadow: 0 0 .5em black inset;
+  background-attachment: fixed;
+}
+
+.machine-box {
+  border: 2px solid white;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  min-width: 25em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: left;
+}
+.machine-box h5 {
+  padding: .5em;
+  background-color: black;
+  margin: 0 0 .5em 0;
+  text-shadow: 0 0 .2em white;
+}
+.machine-box a, .machine-box p {
+  display: block;
+  color: white;
+  font-weight: bold;
+  margin: .3em 0;
+  padding: 0 1em;
+}
+.machine-box a:hover, .machine-box a:active {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 0 .2em white;
+}
+.machine-box .separator {
+  background-color: black;
+  height: 1em;
+  display: block;
+  margin-top: .5em;
+}
+.machine-box a.red {
+  color: #e80003;
+  text-shadow: 0 0 .1em #e80003;
+}
+.machine-box a:hover.red {
+  color: white;
+  background-color: #e80003;
+  box-shadow: 0 0 .2em #e80003;
+  text-shadow: 0 0 .1em white;
+}
+.machine-box a.green {
+  color: #25ff80;
+  text-shadow: 0 0 .1em #25ff80;
+}
+.machine-box a:hover.green {
+  color: white;
+  background-color: #25ff80;
+  box-shadow: 0 0 .2em #25ff80;
+  text-shadow: 0 0 .1em white;
+}
+
+.footer {
+  background: black;
+  flex-shrink: 0;
+}
+
+.footer, .footer a {
+  color: #aaa;
+}
+
+
+@keyframes digital-bang {
+  0% {
+    color: #d2ffeb;
+  }
+
+  25% {
+    color: #caffee;
+  }
+
+  50% {
+    color: #cffdff;
+  }
+
+  75%{
+    color: #ccf4ff;
+  }
+
+  100% {
+    color: #d2ffeb;
+  }
+}

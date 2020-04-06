@@ -1,0 +1,26 @@
+.language-button {
+  position: relative;
+	text-align: center;
+	color: white;
+	filter: grayscale(100%);
+	display: inline-block;
+}
+
+.language-button img {
+	height: 8em;
+	width: 8em;
+}
+
+.language-button div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.language-button:hover {
+  filter: grayscale(0%);
+	color: white;
+	text-decoration: none;
+  text-shadow: 0 0 .05em white;
+}
